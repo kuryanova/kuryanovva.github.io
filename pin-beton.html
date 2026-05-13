@@ -3,19 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0; url=https://t.me/teplybeton/94?single">
+  <title>ACID BLUR</title>
+  <meta http-equiv="refresh" content="3; url=https://t.me/teplybeton/94?single">
   <link rel="canonical" href="https://t.me/teplybeton/94?single">
   <script>
-    window.location.replace('https://t.me/teplybeton/94?single');
+    setTimeout(() => window.location.replace('https://t.me/teplybeton/94?single'), 3000);
   </script>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.5; }
-    a { word-break: break-all; }
+    :root {
+      --acid-yellow: #ddff00;
+      --ink: #08080b;
+      --bg: #c6c6c6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      font-family: Arial, sans-serif;
+      padding: 24px;
+    }
+
+    .hero-title {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      line-height: .9;
+      text-align: center;
+      color: var(--ink);
+      font-weight: 900;
+      font-size: clamp(3.4rem, 12vw, 7.5rem);
+      text-shadow:
+        0 0 2px #fff,
+        0 0 8px #fff,
+        0 0 12px var(--acid-yellow),
+        0 0 22px var(--acid-yellow),
+        0 0 34px var(--acid-yellow),
+        2px 2px 0 #fff,
+        -2px -2px 0 #fff;
+      -webkit-text-stroke: 1px #fff;
+      filter: blur(.15px);
+    }
+
+    .hero-title span {
+      display: block;
+      margin-top: .35em;
+    }
+
+    .fallback {
+      margin-top: 2rem;
+      text-align: center;
+      color: #1e1e1e;
+      font-size: 0.95rem;
+    }
+
+    .fallback a {
+      color: inherit;
+      text-decoration-thickness: 2px;
+      word-break: break-all;
+    }
   </style>
 </head>
 <body>
-  <p>Если редирект не сработал, открой ссылку вручную:</p>
-  <p><a href="https://t.me/teplybeton/94?single">https://t.me/teplybeton/94?single</a></p>
+  <main>
+    <h1 class="hero-title">Acid <span>Blur</span></h1>
+    <div class="fallback">
+      Переход в Telegram через 3 секунды.<br>
+      <a href="https://t.me/teplybeton/94?single">https://t.me/teplybeton/94?single</a>
+    </div>
+  </main>
 </body>
 </html>
