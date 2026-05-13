@@ -31,27 +31,32 @@
     .hero-title {
       margin: 0;
       text-transform: uppercase;
-      letter-spacing: .18em;
-      line-height: .9;
       text-align: center;
       color: var(--ink);
+      font-family: "Arial Black", Impact, "Segoe UI", sans-serif;
       font-weight: 900;
-      font-size: clamp(3.4rem, 12vw, 7.5rem);
+      font-size: clamp(3.2rem, 11vw, 7.1rem);
+      letter-spacing: .14em;
+      line-height: .86;
+      -webkit-text-stroke: 1.5px #ffffff;
       text-shadow:
-        0 0 2px #fff,
+        0 0 1px #fff,
+        0 0 4px #fff,
         0 0 8px #fff,
-        0 0 12px var(--acid-yellow),
+        0 0 13px var(--acid-yellow),
         0 0 22px var(--acid-yellow),
         0 0 34px var(--acid-yellow),
-        2px 2px 0 #fff,
-        -2px -2px 0 #fff;
-      -webkit-text-stroke: 1px #fff;
-      filter: blur(.15px);
+        0 0 48px #ecff2a,
+        1px 1px 0 #fff,
+        -1px -1px 0 #fff;
+      filter: blur(.35px);
+      transform: skewX(-6deg);
     }
 
     .hero-title span {
       display: block;
-      margin-top: .35em;
+      margin-top: .38em;
+      letter-spacing: .16em;
     }
 
     .fallback {
